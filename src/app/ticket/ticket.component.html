@@ -1,0 +1,29 @@
+<div id="main-container">
+    <div id="ticket-container">
+        <div id="div-back">
+            <button (click)="goBack()" class="button-back fa fa-angle-left" id="angle-left"></button>
+            <button (click)="goBack()" class="button-back">Back</button>
+        </div>
+        <div id="div-ticket-text">
+            <strong><h1 id="ticket-text">TICKET</h1></strong>
+        </div>
+        <div id="line-under-ticket-text"></div>
+        <div id="ticket">
+            <div id="from-date">
+                <div id="from">
+                    <p>From:@{{ticket.getNameFrom()}}</p>
+                </div>
+                <div id="date">
+                    <p>{{ticket.getDateToString()}}</p>
+                </div>
+            </div>
+            <div id="subject">
+                <strong><p>{{ticket.getSubject()}}</p></strong>
+            </div>
+            <div id="body">
+                <p>{{ticket.getBody()}}</p>
+            </div>
+        </div>
+        <img id="logo" src="https://infosertecblog.files.wordpress.com/2020/03/tienda-mia.png?w=670">
+    </div>
+</div>

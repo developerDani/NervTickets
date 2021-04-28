@@ -1,0 +1,122 @@
+#main-container{
+    margin-left:-8px;
+    margin-top:-8px;
+    width: 101%;
+    height: 766px;
+    position: relative;
+    background: rgb(218, 212, 212);
+    display: flex;
+    justify-content: center;
+}
+
+
+#ticket-container{
+    height: 500px;
+    width: 440px;
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; 
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+#div-back{
+    width: 100%;
+    height: 50px;
+    margin-bottom:-5px;
+}
+.button-back{
+    height: 100%;
+    font-size:25px;
+    background: transparent;
+    border: none;
+}
+#angle-left{
+    width: 10px;
+    color:red;
+    font-size:30px;
+}
+
+
+#div-ticket-text{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+#ticket-text{
+    font-size:30px;
+    color:rgb(219, 17, 10);
+    font-family: Apple Chancery, cursive;
+    letter-spacing: -0.05em;
+}
+#line-under-ticket-text{
+    margin: 0 auto;
+    margin-top:10px;
+    width: 80%;
+    height: 0px;
+    border:1px solid gray;
+    margin-bottom: 20px;
+
+}
+
+#ticket{
+    height: 60%;
+    width: 80%;
+    margin: 0 auto;
+    border:1px solid gray;
+    border-radius:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+#logo{
+    width: 140px;
+    height: 46px;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+
+#from-date{
+    height: 100px;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+}
+#from{
+    height: 100%;
+    width: 50%;
+    font-size:20px;
+    font-family:  Century Gothic;
+}
+#date{
+    font-family:  Century Gothic;
+    text-align: end;
+    font-size:20px;
+    height: 100%;
+    width: 50%;
+}
+#subject{
+    font-family:  Century Gothic;
+    height: 200px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size:30px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+
+}
+#body{
+    height: 350px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size:25px;
+    font-family:  Century Gothic;
+
+
+}

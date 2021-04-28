@@ -1,0 +1,16 @@
+<div id="main-container">
+    <div id="home-container">
+        <div id="div-back">
+            <button (click)="goBack()" class="button-back fa fa-angle-left" id="angle-left"></button>
+            <button (click)="goBack()" class="button-back">Back</button>
+        </div>
+        <div id="div-tickets-text">
+            <strong><h1 id="tickets-text">TICKETS</h1></strong>
+        </div>
+        <div id="line-under-tickets-text"></div>
+        <div id="tickets">
+            <app-tickets [tickets]="tickets"></app-tickets>
+        </div>
+        <img id="logo" src="https://infosertecblog.files.wordpress.com/2020/03/tienda-mia.png?w=670">
+    </div>
+</div>

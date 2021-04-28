@@ -1,0 +1,14 @@
+<div id="main-container">
+    <div id="login-container">
+        <div id="div-login-text">
+            <strong><h1 id="login-text">LOGIN</h1></strong>
+        </div>
+        <div id="form-login">
+            <input (keyup)="verifyId(username.value)" id="id-login" class="input-login" type="text" placeholder="username" #username>
+            <input (keyup)="verifyPassword()" id="password-login" class="input-login" type="password" placeholder="password" #password>
+            <button (click)="login(username.value,password.value)" id="btn-login" class="btn btn-primary">Log in</button>
+            <img id="logo" src="https://infosertecblog.files.wordpress.com/2020/03/tienda-mia.png?w=670">
+        </div>
+    </div>
+</div>
+ 

@@ -1,0 +1,26 @@
+<div id="main-container">
+    <div id="ticket" *ngFor="let ticket of tickets">
+        <div id="from-and-date" class="division-ticket">
+            <div id="div-from">
+                <p>From:@{{ticket.getNameFrom()}}</p>
+            </div>        
+            <div id="div-date">
+                <p id="date-text">Sent: {{ticket.getDateToString()}}</p>
+            </div>
+        </div>
+        <div id="subject-and-button-forward" class="division-ticket">
+            <div id="div-subject">
+                <div id="div-ticket-state" [ngStyle]="{'background': ticket.getColorState()}">
+                    <p id="text-ticket-state">{{ticket.getState()}}</p>                    
+                </div>
+                <strong><p>{{ticket.getResumeSubject()}}</p></strong>
+            </div>
+            <div id="div-button">
+                <button (click)="seeTicket(ticket)" class="fa fa-angle-right" id="btn-forward"></button>
+            </div>
+        </div>
+        <div id="body" class="division-ticket">
+            <p>{{ticket.getResumeBody()}}</p>
+        </div>
+    </div>
+</div>
